@@ -42,7 +42,7 @@ export function PrizesSection() {
     {
       icon: Medal,
       place: "3rd Place",
-      amount: "Rs 30,000",
+      amount: "Rs 20,000",
       description: "Third place prize",
       color: "text-orange-400",
     },
@@ -67,7 +67,7 @@ export function PrizesSection() {
             Prizes & <span className="text-primary">Rewards</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Over $50,000 in prizes and rewards for the best projects
+            Over Rs 85,000 in prizes and rewards for the best projects
           </p>
         </div>
 

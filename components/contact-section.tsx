@@ -16,7 +16,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
-
+import { PdfViewer } from "./pdf-viewer";
 export function ContactSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
@@ -55,7 +55,15 @@ export function ContactSection() {
     { icon: Linkedin, href: "#", label: "LinkedIn" },
     { icon: Instagram, href: "#", label: "Instagram" },
   ];
+  const [pdfOpen, setPdfOpen] = useState(false);
+  const [pdfSrc, setPdfSrc] = useState<string>("/docs/privacy-policy.pdf");
+  const [pdfTitle, setPdfTitle] = useState<string>("Privacy Policy");
 
+  const openPdf = (src: string, title: string) => {
+    setPdfSrc(src);
+    setPdfTitle(title);
+    setPdfOpen(true);
+  };
   return (
     <section id="contact" ref={sectionRef} className="px-4 mt-10">
       <div className="container mx-auto max-w-6xl">
@@ -110,19 +118,16 @@ export function ContactSection() {
           <p className="text-muted-foreground text-sm">
             © 2025 Code4Good. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm">
-            <a
-              href="#"
-              className="text-muted-foreground hover:text-primary transition-colors"
+          <div className="flex gap-6 text-sm mt-2">
+            <button
+              type="button"
+              onClick={() =>
+                openPdf("/docs/privacy-policy.pdf", "Privacy Policy")
+              }
+              className="text-muted-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
             >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Code of Conduct
-            </a>
+              Privacy Policy | Code of Conduct
+            </button>
           </div>
         </div>
 
@@ -136,6 +141,8 @@ export function ContactSection() {
           />
         </div>
       </div>
+      <PdfViewer open={pdfOpen} onOpenChange={setPdfOpen} src={pdfSrc} title={pdfTitle} />
     </section>
+
   );
 }

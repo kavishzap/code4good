@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 import Logo from "../assets/_D99439EB-D03A-4895-9BAA-7550B3A2E620_-removebg-preview.png";
 import Logo1 from "../assets/_1EC14206-041D-4D95-9BED-EA5E9AE3A331_-removebg-preview.png";
+import Link from "next/link";
+import Countdown from "./countdown";
 
 export function HeroSection() {
   const [displayText, setDisplayText] = useState("");
@@ -72,18 +74,13 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center px-4 pt-16">
       <div className="container mx-auto -mt-10">
         <div className="flex justify-center mb-5">
-          <img
-            src={Logo1.src}
-            alt="CodeHack Logo"
-            className="h-28 w-auto"
-          />
+          <img src={Logo1.src} alt="CodeHack Logo" className="h-28 w-auto" />
         </div>
         <div className="text-center">
           <div className="mb-6">
             <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary text-sm font-mono">
-              THE HIVE workplace Nouvelle Usine, November 15, 2025 
+              THE HIVE workplace Nouvelle Usine, November 15, 2025
             </span>
-
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 font-mono">
@@ -96,18 +93,22 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 group text-lg px-8 py-6"
-            >
-              Register Now
-              <ArrowRight
-                className="ml-2 group-hover:translate-x-1 transition-transform"
-                size={20}
-              />
-            </Button>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd0BrwLwwFWdz6uns4hl4KWkKpEONYTPwdVyuQ--0rlXl3b7A/viewform?usp=publish-editor">
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 group text-lg px-8 py-6"
+              >
+                Register Now
+                <ArrowRight
+                  className="ml-2 group-hover:translate-x-1 transition-transform"
+                  size={20}
+                />
+              </Button>
+            </Link>
           </div>
-
+          <div className="mt-4 text-center">
+            <Countdown />
+          </div>
           <div className="mt-16 grid grid-cols-3 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
               { value: "10 Teams", label: "Competing" },
