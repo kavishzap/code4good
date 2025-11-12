@@ -86,7 +86,7 @@ export function SponsorsSection() {
                     : (sponsor.logo as any)?.src || "/placeholder.svg"
                 }
                 alt={sponsor.name}
-                className="h-16 w-auto max-w-full grayscale hover:grayscale-0 transition-all"
+                className="h-16 w-auto max-w-full hover:grayscale-0 transition-all"
               />
             </div>
           ))}
