@@ -14,8 +14,9 @@ import zeko from "../assets/zeko.png";
 import mug from "../assets/mug.png";
 import mt from "../assets/mt.png";
 import vi from "../assets/vi.png";
+import lab from "../assets/WhatsApp Image 2025-11-12 at 22.50.01_9f684533.jpg";
 
-
+import tele from "../assets/{A2EFD227-8949-46A4-AD7D-BCC5F0F59CA5}.png";
 export function SponsorsSection() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -42,8 +43,8 @@ export function SponsorsSection() {
     { name: "CloudBase", logo: bdo },
     { name: "DataFlow", logo: nx },
     { name: "CodeLabs", logo: pop },
-    { name: "StartupX", logo: kl },
-    { name: "DevTools", logo: mug },
+    { name: "StartupX", logo: lab },
+    { name: "DevTools", logo: tele },
     { name: "InnovateCo", logo: dev },
     { name: "AILabs", logo: zeko },
     { name: "CodeSpace", logo: kfc },
