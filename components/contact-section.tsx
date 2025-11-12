@@ -99,10 +99,10 @@ export function ContactSection() {
                     For general inquiries and support
                   </p>
                   <a
-                    href="mailto:hello@codehack2025.com"
+                    href="mailto:uomoracleclub01@gmail.com"
                     className="text-primary hover:underline"
                   >
-                    Code4Good@gmail.com
+                    uomoracleclub01@gmail.com
                   </a>
                 </div>
               </div>

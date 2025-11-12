@@ -79,7 +79,7 @@ export function HeroSection() {
         <div className="text-center">
           <div className="mb-6">
             <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary text-sm font-mono">
-              THE HIVE workplace Nouvelle Usine, November 15, 2025
+              Telecom Campus 2nd Floor,The Core building, November 15, 2025
             </span>
           </div>
 
@@ -92,20 +92,6 @@ export function HeroSection() {
             24 hours of innovation, collaboration, and code.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd0BrwLwwFWdz6uns4hl4KWkKpEONYTPwdVyuQ--0rlXl3b7A/viewform?usp=publish-editor">
-              <Button
-                size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 group text-lg px-8 py-6"
-              >
-                Register Now
-                <ArrowRight
-                  className="ml-2 group-hover:translate-x-1 transition-transform"
-                  size={20}
-                />
-              </Button>
-            </Link>
-          </div>
           <div className="mt-4 text-center">
             <Countdown />
           </div>

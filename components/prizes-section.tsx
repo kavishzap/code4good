@@ -49,7 +49,7 @@ export function PrizesSection() {
     {
       icon: Gift,
       place: "Track Winners",
-      amount: "Shield Worth Rs 5,000",
+      amount: "Shield",
       description: "Best project",
       color: "text-primary",
     },

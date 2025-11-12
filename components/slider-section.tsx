@@ -21,8 +21,13 @@ export function ImageCarousel({ images, interval = 4000 }: ImageCarouselProps) {
   }, [current, interval, total]);
 
   return (
-    <div className="px-4 md:px-8 lg:px-12"> {/* ✅ Added spacing wrapper */}
-      <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl">
+    <div id="teams" className="px-4 md:px-8 lg:px-12 scroll-mt-24"> {/* ✅ Added spacing wrapper */}
+      <div className="relative w-full max-w-2xl mx-auto overflow-hidden rounded-xl">
+        <div className="mb-10 flex flex-col items-center text-center gap-2">
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
+          Top 10 Teams 
+        </h2>
+      </div>
         {/* Slides */}
         <div
           className="flex transition-transform duration-700 ease-in-out"

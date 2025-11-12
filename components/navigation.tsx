@@ -27,9 +27,9 @@ export function Navigation() {
 
   const navItems = [
     { label: "About", href: "#about" },
+     { label: "Top 10 Teams", href: "#teams" },
     { label: "Challenges", href: "#challenges" },
     { label: "Prizes", href: "#prizes" },
-    { label: "How to Participate", href: "#participate" },
     { label: "FAQ", href: "#faq" },
   ];
 
