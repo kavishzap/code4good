@@ -64,15 +64,6 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSd0BrwLwwFWdz6uns4hl4KWkKpEONYTPwdVyuQ--0rlXl3b7A/viewform?usp=publish-editor"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Register Now
-              </Button>
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -101,12 +92,6 @@ export function Navigation() {
                   {item.label}
                 </a>
               ))}
-              <Button
-                className="bg-primary text-primary-foreground hover:bg-primary/90 w-full mt-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Register Now
-              </Button>
             </div>
           </div>
         </div>
